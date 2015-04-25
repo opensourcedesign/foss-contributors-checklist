@@ -1,0 +1,15 @@
+# Site settings
+title: Open Source Checklist
+email: osd@job-board.com
+description: > # this means to ignore newlines until "baseurl:"
+  A checklist for open source projects
+baseurl: "/foss-contributors-checklist" # the subpath of your site, e.g. /blog/
+url: "http://opensourcedesign.net" # the base hostname & protocol for your site
+twitter_username: opensourcedesign
+github_username:  opensourcedesign
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
