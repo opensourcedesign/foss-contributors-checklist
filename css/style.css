@@ -8,7 +8,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 body {
-	font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    	font-weight: 300;
    	line-height: normal;
 }
@@ -188,6 +188,10 @@ small {
 #Delight { background: #40A4D8; }
 #Analyse { background: #33BEB7; }
 
+.row {
+	flex-wrap: wrap;
+}
+
 .cards {
 	border: 1px solid #f1f1f1;
 	padding:20px;
@@ -302,20 +306,20 @@ small {
 	    position: absolute;
 	    bottom: -10px;
 	    left: 3px;
-	    
+
 	    /* Border is the new background */
 	    background: none;
-	    
+
 	    /* Rotate from top left corner (not default) */
 	    -webkit-transform-origin: 0 0;
 	    -moz-transform-origin:    0 0;
 	    -ms-transform-origin:     0 0;
 	    -o-transform-origin:      0 0;
-	    
-	    -webkit-transform: rotate(-90deg); 
-	    -moz-transform:    rotate(-90deg); 
-	    -ms-transform:     rotate(-90deg); 
-	    -o-transform:      rotate(-90deg); 
+
+	    -webkit-transform: rotate(-90deg);
+	    -moz-transform:    rotate(-90deg);
+	    -ms-transform:     rotate(-90deg);
+	    -o-transform:      rotate(-90deg);
 	}
 
 	.cards {
@@ -326,9 +330,9 @@ small {
 }
 
 @media print {
-	
+
 	@page { margin:0in; }
-	
+
 	body {
 		width: 100%;
 		margin: 0;
