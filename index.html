@@ -10,7 +10,7 @@ layout: default
 				<img class="left" src="img/icons128/Deep-Crawl.png">
 			</div> -->
 			<div class="card-content left">
-				<label for="checkbox1">{{ post.title }}</label>
+				<label for="checkbox{{forloop.index}}">{{ post.title }}</label>
 				<p>{{ post.content }}
 				{% if post.read_more %}
 					<a class="more hide-for-print" href="{{ post.read_more }}" target="_blank" title="{{ post.read_more_title }}">Read more</a></p>

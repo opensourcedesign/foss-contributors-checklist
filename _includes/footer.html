@@ -1,153 +1,51 @@
-<div id="footer" class="">
+<footer class="site-footer">
 
-    <div id="toolbar" class="hide-for-print">
-      <button id="print" onclick="window.print();" type="button"><i class="fa fa-print"></i>Print</button>
-      <button id="reset"><i class="fa fa-refresh"></i>Reset</button>
-      <a id="github" class="button" href="https://github.com/opensourcedesign/foss-contributors-checklist" target="_blank" title="fork on github"><i class="fa fa-github"></i>Fork</a>
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col  footer-col-3">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">{{ site.github_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">{{ site.twitter_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+          
+          <li>
+            <a href="http://chat.opensourcedesign.net/">#opensourcedesign IRC channel</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">{{ site.description }}</p>
+      </div>
     </div>
 
-    <div id="credits">Created by&nbsp;<a href="https://github.com/{{ site.github_username }}" target="_blank" title="@{{ site.github_username }}">@{{ site.github_username }}</a>. Much thanks to the <a href="https://uxchecklist.github.io/">UX Checklist.</a>
-    </div>
-
-{% comment %}
-    <div class="hide-for-print clearfix">
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="//github.us9.list-manage.com/subscribe/post?u=08f46baa146402de6c0fd5ce1&amp;id=fefa7a6868" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  <label for="mce-EMAIL">We are working to make this better. Sign up for updates!</label>
-  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_08f46baa146402de6c0fd5ce1_fefa7a6868" tabindex="-1" value=""></div>
-    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
   </div>
 
-    <div class="hide-for-print clearfix">
-      <a class="typeform-share button" href="https://sovesove.typeform.com/to/Ok2qWy" data-mode="1" target="_blank" title="give some feedback!"><i class="fa fa-comment-o"></i>Do you like that?</a>
-      <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';
-      /*if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}*/})()</script>
-    </div>
-    <div id="inspiredby" class="hide-for-print clearfix"><a href="#friends" class="open-popup-link">Friends of this page</a></div>
-    <div id="friends" class="white-popup mfp-hide">
-      <p>
-      Special thanks to:</br>
-      <a href="https://twitter.com/alefranz" target="_blank" title="@alefranz">@alefranz</a> for the technical magic.</br>
-      </p>
-      <p>
-      Inspired by&nbsp;<a href="http://webdesignerschecklist.com/" target="_blank" title="webdesignerschecklist">this</a>,&nbsp;<a href="https://userium.com/" target="_blank" title="Usability checklist">this</a>&nbsp;and&nbsp;<a href="http://ixdchecklist.com/" target="_blank" title="ixdchecklist">this</a>
-      </p>
-      <p>
-      Also thanks to:</br>
-      <a href="http://mokreo.com/" target="_blank" title="mokreo.com">Mokreo</a> for the superb illustrated icons.</br>
-      <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank" title="Magnific Popup">Magnific Popup</a> for this responsive modal popup.</br>
-      <a href="http://garlicjs.org/" target="_blank" title="GarlicJs">GarlicJs</a> for the garlic, which everyone knows helps you save digital things locally in your browser.</br>
-      <a href="http://fntneves.github.io/jquery-labelauty/" target="_blank" title="Labelauty">Labelauty</a> for the checkbox beautifier.</br>
-      <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank" title="Font Awesome">Font Awesome</a> for the iconic font.</br>
-      </p>
-    </div>
-  </div>
-
-{% endcomment %}
-
-
-
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- <script src="js/vendor/jquery.js"></script> -->
-  <script>
-    window.Modernizr || document.write('<script type="text/javascript" src="js/vendor/modernizr.js">\x3C/script>');
-    window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery.js">\x3C/script>');
-  </script>
-
-  <script src="js/garlic.js"></script>
-  <script src="js/jquery-labelauty.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(":checkbox").labelauty({ label: false });
-      $("#checklist-form").garlic();
-
-      $("#reset").on('click', function(){
-        $('input:checkbox').each(function() {
-          $(this).prop('checked', false);
-        });
-        $("#checklist-form").garlic('destroy');
-      });
-      $("#footer a").on('click', function(e){
-        var elm = e.currentTarget;
-        ga('send', 'event', 'footer', $(elm).attr('title'));
-      });
-      $("input:checkbox").on('change', function(e){
-        var cb = $(this);
-        var id = cb.attr('id');
-        var isChecked = cb.is(':checked');
-        // ga('send', 'event', {
-        //   'eventCategory': 'checkbox',
-        //   'eventAction': isChecked ? 'set' : 'clear',
-        //   'eventLabel': id
-        // });
-      });
-
-      $('.open-popup-link').magnificPopup({
-        type:'inline',
-        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-      });
-    });
-
-    //realtime api
-    var checkboxes = {};
-    var view = null;
-    var controller = null;
-
-    // $().ready(function(){
-    //   var isFn = function(id, e) { return $(e).is(':checked'); };
-    //   var setFn = function(id, e, val) {
-    //     $(e).prop('checked', val);
-    //     $(e).garlic('persist');
-    //   };
-    //   $('input:checkbox').each(function() {
-    //     var id = $(this).attr('id');
-    //     checkboxes[id] = new Realtime.Model.CheckBox(id, this, isFn, setFn);
-    //   });
-    //   view = new Realtime.View(checkboxes);
-    //   var cb = view.checkboxes;
-    //   console.log(cb);
-    //   controller = new Realtime.Controller(view);
-
-    //   gapi.load("auth:client,drive-realtime,drive-share", function () {
-    //     controller.init();
-    //     $('form').on('change', 'input:checkbox', function(ev){
-    //       console.log(ev);
-    //       controller.onCheckBoxChange($(ev.target).attr('id'));
-    //     });
-
-    //     var signinSuccess = function() {
-    //       $('#signin-do').hide();
-    //       $('#signin-fail').hide();
-    //       $('#signin-success').show();
-    //       $("#reset").on('click', function(){
-    //         controller.save();
-    //       });
-    //     };
-
-    //     var signinFailed = function() {
-    //       $('#signin-fail').show();
-    //     };
-
-    //     controller.auth(true,
-    //         signinSuccess,
-    //         function(){$('#signin-do').show();}
-    //     );
-
-    //     $('#signin').on('click', function(){
-    //       controller.auth(false, signinSuccess, signinFailed);
-    //     });
-    //   });
-    // });
-  </script>
-  <!-- <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
-  <script type="text/javascript" src="js/realtime.js"></script> -->
+</footer>

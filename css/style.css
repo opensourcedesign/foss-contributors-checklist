@@ -9,8 +9,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body {
 	font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   	font-weight: 300;
-   	line-height: normal;
+ 	font-weight: 300;
+ 	line-height: normal;
 }
 
 /* clearfix */
@@ -40,7 +40,6 @@ body {
 	float: right;
 }
 
-
 .rotate {
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -53,16 +52,19 @@ a {
 	color: #00F;
 	text-decoration: none;
 	white-space: nowrap;
+
+	i {
+		color: #DEDEDE;
+	}
 }
+
 .no-touch a:hover {
-	text-decoration: underline;
+
+	 i {
+		color: #CECECE;
+	}
 }
-a i {
-	color: #DEDEDE;
-}
-.no-touch a:hover i {
-	color: #CECECE;
-}
+
 p {
 	margin-bottom: 10px;
 	font-size: 0.9em;
@@ -102,21 +104,30 @@ button i,
 .no-touch a:hover i {
 	color: #FFF;
 }
+
 #reset {
 	background-color: transparent;
 	border: 1px solid #DF5941;
 	color: #DF5941;
+	i {
+		color: inherit;
+	}
 }
-#reset i {
-	color: inherit;
+.no-touch {
+
+	#reset:hover, #signin {
+		background-color: #DF5941;
+		color: #FFF;
+	}
+	#signin:hover {
+		background-color: #CF4931;
+	}
 }
-.no-touch #reset:hover, #signin {
-	background-color: #DF5941;
-	color: #FFF;
+
+.page-content .wrapper {
+	max-width: inherit;
 }
-.no-touch #signin:hover {
-	background-color: #CF4931;
-}
+
 #github {
 	background-color: #999;
 	color: #FFF;
@@ -125,10 +136,11 @@ button i,
 #header {
     padding: 0.8rem;
     text-align: center;
-}
-#header h1 {
-	display: inline-block;
-	padding: 5px;
+
+    h1 {
+		display: inline-block;
+		padding: 5px;
+	}
 }
 small {
 	font-size: 0.7em;
@@ -290,36 +302,36 @@ small {
 	.title {
 		position: relative;
 		color: #FFF;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-shrink: 0;
-	    -ms-flex-negative: 0;
-	        flex-shrink: 0;
-		width: 50px;
-        padding: 0;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-shrink: 0;
+		    -ms-flex-negative: 0;
+		        flex-shrink: 0;
+			width: 50px;
+	        padding: 0;
 	}
 
 	.title span {
 		/* Abs positioning makes it not take up vert space  */
-	    position: absolute;
-	    bottom: -10px;
-	    left: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
 
-	    /* Border is the new background */
-	    background: none;
+    /* Border is the new background */
+    background: none;
 
-	    /* Rotate from top left corner (not default) */
-	    -webkit-transform-origin: 0 0;
-	    -moz-transform-origin:    0 0;
-	    -ms-transform-origin:     0 0;
-	    -o-transform-origin:      0 0;
+    /* Rotate from top left corner (not default) */
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin:    0 0;
+    -ms-transform-origin:     0 0;
+    -o-transform-origin:      0 0;
 
-	    -webkit-transform: rotate(-90deg);
-	    -moz-transform:    rotate(-90deg);
-	    -ms-transform:     rotate(-90deg);
-	    -o-transform:      rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform:    rotate(-90deg);
+    -ms-transform:     rotate(-90deg);
+    -o-transform:      rotate(-90deg);
 	}
 
 	.cards {
