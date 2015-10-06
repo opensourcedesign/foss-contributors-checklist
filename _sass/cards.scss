@@ -1,0 +1,88 @@
+.cards {
+  border: 1px solid #f1f1f1;
+  padding:20px;
+  padding: 1.25rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+
+  &.getting-started { background: $getting-started; }
+  &.community { background: $community; }
+  &.ongoing { background: $ongoing; }
+  &.contributors { background: $contributors; }
+  /*&.examples { background: $examples; }*/
+  &.using { background: $using; }
+
+  div.img {
+    margin-bottom: 10px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+  }
+
+  .img img {
+    width: 64px;
+    height: 64px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+}
+
+.card-content {
+  padding: 0 10px;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+
+  label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: normal;
+    padding-right: 10px;
+  }
+}
+
+input[type="checkbox"]:checked + .card-content {
+  background-image: url('/foss-contributors-checklist/img/check-mark.png');
+  background-repeat: no-repeat;
+}
+
+.getting-started input[type="checkbox"]:checked + .card-content {
+  background-color: darken($getting-started, 20%);
+}
+.community input[type="checkbox"]:checked + .card-content {
+  background-color: darken($community, 20%);
+}
+.ongoing input[type="checkbox"]:checked + .card-content {
+  background-color: darken($ongoing, 20%);
+}
+.using input[type="checkbox"]:checked + .card-content {
+  background-color: darken($using, 20%);
+}
+/*.examples input[type="checkbox"]:checked + .card-content {
+  background-color: darken($examples, 20%);
+}*/
+.contributors input[type="checkbox"]:checked + .card-content {
+  background: darken($contributors, 20%);
+}

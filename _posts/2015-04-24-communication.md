@@ -2,6 +2,7 @@
 layout: checklist
 title: Communicating with the team
 category: Community
+category_slug: community
 example:
 example_title:
 read_more:

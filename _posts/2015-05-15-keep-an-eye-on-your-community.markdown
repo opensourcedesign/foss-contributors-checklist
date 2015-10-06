@@ -3,6 +3,7 @@ layout: checklist
 date: 2015-05-15-16-07
 title: "Keep an eye on your community"
 category: Ongoing
+category_slug: ongoing
 example:
 example_title:
 read_more:

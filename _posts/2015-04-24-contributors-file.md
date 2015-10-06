@@ -1,7 +1,8 @@
 ---
 layout: checklist
-title: Contibutor.MD
+title: Contibutors.MD
 category: Contributors
+category_slug: contributors
 example: https://github.com/maxogden/dat/blob/master/contributors.md
 example_title: Dat Project
 read_more:

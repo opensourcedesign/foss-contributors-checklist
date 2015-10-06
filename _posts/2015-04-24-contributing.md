@@ -1,7 +1,8 @@
 ---
 layout: checklist
 title: Contributing.MD
-category: Contributing
+category: Contributors
+category_slug: contributors
 example: https://github.com/owncloud/core/blob/master/CONTRIBUTING.md
 example_title: OwnCloud
 read_more:

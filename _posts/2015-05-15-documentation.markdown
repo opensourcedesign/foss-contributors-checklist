@@ -3,6 +3,7 @@ layout: checklist
 date: 2015-05-15-15-57
 title: "Documentation"
 category: "Using"
+category_slug: using
 example:
 example_title:
 read_more:

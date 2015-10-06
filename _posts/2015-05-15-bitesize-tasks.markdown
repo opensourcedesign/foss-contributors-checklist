@@ -3,6 +3,7 @@ layout: checklist
 date: 2015-05-15-16-07
 title: "Bitesize Tasks"
 category: Getting Started
+category_slug: getting-started
 example:
 example_title:
 read_more:

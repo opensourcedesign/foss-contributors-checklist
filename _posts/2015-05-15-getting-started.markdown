@@ -2,6 +2,7 @@
 layout: checklist
 title: Getting Started
 category: "Getting Started"
+category_slug: getting-started
 example:
 example_title:
 read_more:

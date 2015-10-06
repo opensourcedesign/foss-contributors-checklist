@@ -5,22 +5,22 @@ layout: default
 	<div class="row clearfix">
 		<!-- <div id="Research" class="title"><span>Research</span></div> -->
 		{% for post in site.posts %}
-		<div class="cards">
+		<div class="cards {{ post.category_slug }}">
+			<input id="checkbox{{forloop.index}}" type="checkbox">
 			<!-- <div class="img">
 				<img class="left" src="img/icons128/Deep-Crawl.png">
 			</div> -->
 			<div class="card-content left">
-				<label for="checkbox{{forloop.index}}">{{ post.title }}</label>
-				<p>{{ post.content }}
+				<label for="checkbox{{forloop.index}}">{{ post.title }}
+				<div><small>{{ post.category }}</small></div>
+				<p>{{ post.content }}</p>
+				</label>
 				{% if post.read_more %}
-					<a class="more hide-for-print" href="{{ post.read_more }}" target="_blank" title="{{ post.read_more_title }}">Read more</a></p>
+					<a class="more hide-for-print" href="{{ post.read_more }}" target="_blank" title="{{ post.read_more_title }}">Read more</a>
 				{% endif %}
 				{% if post.example %}
-					<a class="more hide-for-print" href="{{ post.example }}" target="_blank" title="{{ post.example_title }}">Example at {{ post.example_title }}</a></p>
+					<a class="more hide-for-print" href="{{ post.example }}" target="_blank" title="{{ post.example_title }}">Example at {{ post.example_title }}</a>
 				{% endif %}
-			</div>
-			<div class="right">
-				<input id="checkbox{{forloop.index}}" type="checkbox">
 			</div>
 		</div>
 		{% endfor %}
