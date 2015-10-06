@@ -3,8 +3,8 @@ layout: checklist
 title: Communicating with the team
 category: Community
 category_slug: community
-example:
-example_title:
+example: http://hood.ie/contact/
+example_title: Hoodie
 read_more:
 read_more_title:
 ---

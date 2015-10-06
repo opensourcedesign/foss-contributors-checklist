@@ -44,6 +44,7 @@
 
 .card-content {
   padding: 0 10px;
+  transition: .5s background-color;
   -webkit-box-flex: 3;
   -webkit-flex-grow: 3;
       -ms-flex-positive: 3;
@@ -61,6 +62,10 @@
     line-height: normal;
     padding-right: 10px;
   }
+
+  a {
+    color: white;
+  }
 }
 
 input[type="checkbox"]:checked + .card-content {
@@ -72,7 +77,7 @@ input[type="checkbox"]:checked + .card-content {
   background-color: darken($getting-started, 20%);
 }
 .community input[type="checkbox"]:checked + .card-content {
-  background-color: darken($community, 20%);
+  background-color: darken($community, 10%);
 }
 .ongoing input[type="checkbox"]:checked + .card-content {
   background-color: darken($ongoing, 20%);
@@ -80,9 +85,6 @@ input[type="checkbox"]:checked + .card-content {
 .using input[type="checkbox"]:checked + .card-content {
   background-color: darken($using, 20%);
 }
-/*.examples input[type="checkbox"]:checked + .card-content {
-  background-color: darken($examples, 20%);
-}*/
 .contributors input[type="checkbox"]:checked + .card-content {
   background: darken($contributors, 20%);
 }

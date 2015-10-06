@@ -1,9 +1,15 @@
 ---
 layout: default
 ---
+
+<p class="intro-text">
+  Open source projects are about so much more than just code. They're about
+</p>
+
 <form id="checklist-form" method="POST">
 	<div class="row clearfix">
-		<!-- <div id="Research" class="title"><span>Research</span></div> -->
+
+
 		{% for post in site.posts %}
 		<div class="cards {{ post.category_slug }}">
 			<input id="checkbox{{forloop.index}}" type="checkbox">
