@@ -4,8 +4,8 @@ date: 2015-05-15-16-07
 title: "Bitesize Tasks"
 category: Getting Started
 category_slug: getting-started
-example:
-example_title:
+example: https://openhatch.org/search/?q=&toughness=bitesize
+example_title: OpenHatch
 read_more:
 read_more_title:
 ---

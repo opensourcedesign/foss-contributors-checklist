@@ -6,8 +6,8 @@ category: Community
 category_slug: community
 example:
 example_title:
-read_more:
-read_more_title:
+read_more: http://contributor-covenant.org/
+read_more_title: Contributor Covenant
 ---
 
 A great way to tell newcomers you care about them and their thoughts is to outline what kind of behaviour is okay in your community.

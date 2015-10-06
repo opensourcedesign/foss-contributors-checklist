@@ -1,8 +1,9 @@
 # Site settings
 title: Open Source Checklist
 email: osd@job-board.com
-description: > # this means to ignore newlines until "baseurl:"
-  A checklist for open source projects
+description: A checklist for open source projects.
+description_with_link: > # this means to ignore newlines until "baseurl:"
+  A checklist for open source projects, based on the <a href="https://github.com/uxchecklist/uxchecklist.github.io">UX checklist</a>
 baseurl: "/foss-contributors-checklist" # the subpath of your site, e.g. /blog/
 url: "http://opensourcedesign.net" # the base hostname & protocol for your site
 twitter_username: opensourcedesign

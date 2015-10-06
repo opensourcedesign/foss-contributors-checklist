@@ -10,4 +10,4 @@ read_more:
 read_more_title:
 ---
 
-Mark some tasks as mentored, indicating that a newcomer can tackle them, and that there will be someone available to help them out with any help they might have.
+Mark some tasks as mentored, indicating that a newcomer can tackle them, and that there will be someone available to help them out with any questions they might have.

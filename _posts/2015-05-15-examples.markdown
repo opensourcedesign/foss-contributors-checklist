@@ -4,8 +4,8 @@ date: 2015-05-15-16-06
 title: "Examples"
 category: Using
 category_slug: using
-example:
-example_title:
+example: http://kimmobrunfeldt.github.io/progressbar.js/
+example_title: ProgressBar.js
 read_more:
 read_more_title:
 ---
