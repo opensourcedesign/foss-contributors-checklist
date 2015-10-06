@@ -3,8 +3,8 @@ layout: checklist
 title: Getting Started
 category: "Getting Started"
 category_slug: getting-started
-example:
-example_title:
+example: https://github.com/openfarmcc/openfarm#getting-started-setup
+example_title: OpenFarm
 read_more:
 read_more_title:
 ---
